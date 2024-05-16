@@ -1,0 +1,321 @@
+{
+  "id": "54970fac-4c43-42dc-925b-8a6644722bb1",
+  "version": "2.0",
+  "name": "Test task",
+  "url": "https://mail.yandex.ru/?uid=805581109#tabs/relevant",
+  "tests": [{
+    "id": "e69c6660-e781-4bdd-a2b0-b56c64fdb74b",
+    "name": "3DraftWriteAndCheck",
+    "commands": [{
+      "id": "d0d66885-226c-4d16-9b66-7de7da214940",
+      "comment": "Открытие почтового сервиса",
+      "command": "open",
+      "target": "https://www.google.com/intl/ru/gmail/about/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "829e0238-6181-4a03-b2e0-7518310dc9b7",
+      "comment": "Нажатие на кнопку \"Войти\"",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.button--mobile-before-hero-only", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebe5546a-2639-40ff-ad8f-baaf4ea8a104",
+      "comment": "Выбор аккаунта",
+      "command": "click",
+      "target": "css=.pGzURd",
+      "targets": [
+        ["css=.pGzURd", "css:finder"],
+        ["xpath=//body[@id='yDmH0d']/div/div/div[2]/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2af0f57d-e5de-4933-bf3f-fa2d713fc583",
+      "comment": "Первый черновик",
+      "command": "click",
+      "target": "css=.T-I-KE",
+      "targets": [
+        ["css=.T-I-KE", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ecb8ec8-e477-41cc-9cc6-9481af6c8375",
+      "comment": "Ввод почты",
+      "command": "type",
+      "target": "id=:th",
+      "targets": [
+        ["id=:th", "id"],
+        ["css=#\\3Ath", "css:finder"],
+        ["xpath=//input[@id=':th']", "xpath:attributes"],
+        ["xpath=//div[@id=':qd']/div/div[3]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "test1@test.ru"
+    }, {
+      "id": "4957839c-3b58-43fe-93e4-4bed92bca5de",
+      "comment": "Нажатие на форму",
+      "command": "click",
+      "target": "id=:pw",
+      "targets": [
+        ["id=:pw", "id"],
+        ["css=#\\3Apw", "css:finder"],
+        ["xpath=//div[@id=':pw']", "xpath:attributes"],
+        ["xpath=//form[@id=':qa']/div[3]", "xpath:idRelative"],
+        ["xpath=//form/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11b93f65-dfab-4d4e-8f5d-8cecde501631",
+      "comment": "Ввод содержания",
+      "command": "type",
+      "target": "id=:pv",
+      "targets": [
+        ["id=:pv", "id"],
+        ["name=subjectbox", "name"],
+        ["css=#\\3Apv", "css:finder"],
+        ["xpath=//input[@id=':pv']", "xpath:attributes"],
+        ["xpath=//div[@id=':pw']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test 1"
+    }, {
+      "id": "5435ea88-e6ac-46e1-b67a-bda57abef76d",
+      "comment": "Нажатие на форму",
+      "command": "click",
+      "target": "id=:mu",
+      "targets": [
+        ["id=:mu", "id"],
+        ["css=#\\3Amu", "css:finder"],
+        ["xpath=//img[@alt='Закрыть']", "xpath:img"],
+        ["xpath=//img[@id=':mu']", "xpath:attributes"],
+        ["xpath=//tr[@id=':mr']/td[2]/img[3]", "xpath:idRelative"],
+        ["xpath=//img[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf380c94-ae77-4881-ac2a-9173acc37d4e",
+      "comment": "Второй черновие",
+      "command": "click",
+      "target": "css=.T-I-KE",
+      "targets": [
+        ["css=.T-I-KE", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59435ce2-be91-4670-86c4-1e0400f16a8c",
+      "comment": "Нажатие на форму",
+      "command": "click",
+      "target": "id=:v8",
+      "targets": [
+        ["id=:v8", "id"],
+        ["css=#\\3Av8", "css:finder"],
+        ["xpath=//input[@id=':v8']", "xpath:attributes"],
+        ["xpath=//div[@id=':nv']/div/div[3]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "581365f3-6012-46cc-87d1-4968caa247ee",
+      "comment": "Ввод почты",
+      "command": "type",
+      "target": "id=:v8",
+      "targets": [
+        ["id=:v8", "id"],
+        ["css=#\\3Av8", "css:finder"],
+        ["xpath=//input[@id=':v8']", "xpath:attributes"],
+        ["xpath=//div[@id=':nv']/div/div[3]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "test2@test.ru"
+    }, {
+      "id": "44a250ec-3c44-47cf-ab03-525a27b29ed6",
+      "comment": "Нажатие на форму",
+      "command": "click",
+      "target": "id=:od",
+      "targets": [
+        ["id=:od", "id"],
+        ["name=subjectbox", "name"],
+        ["css=#\\3Aod", "css:finder"],
+        ["xpath=//input[@id=':od']", "xpath:attributes"],
+        ["xpath=//div[@id=':oc']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9dd924a-1e4c-4813-aac2-8a5cedc4c75b",
+      "comment": "Ввод содержания",
+      "command": "type",
+      "target": "id=:od",
+      "targets": [
+        ["id=:od", "id"],
+        ["name=subjectbox", "name"],
+        ["css=#\\3Aod", "css:finder"],
+        ["xpath=//input[@id=':od']", "xpath:attributes"],
+        ["xpath=//div[@id=':oc']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test 2"
+    }, {
+      "id": "83975068-bffc-45e3-8650-b77f8ad2e5b3",
+      "comment": "Третий черновик",
+      "command": "click",
+      "target": "css=.T-I-KE",
+      "targets": [
+        ["css=.T-I-KE", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b412e41c-b40d-4171-b5d5-9df54369764a",
+      "comment": "Ввод почты",
+      "command": "type",
+      "target": "id=:12t",
+      "targets": [
+        ["id=:wz", "id"],
+        ["css=#\\3Awz", "css:finder"],
+        ["xpath=//input[@id=':wz']", "xpath:attributes"],
+        ["xpath=//div[@id=':qd']/div/div[3]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "test3@test.ru"
+    }, {
+      "id": "99637d2d-7693-416e-910b-a216db5d1d96",
+      "comment": "Нажатие на форму",
+      "command": "click",
+      "target": "id=:z7",
+      "targets": [
+        ["id=:pv", "id"],
+        ["name=subjectbox", "name"],
+        ["css=#\\3Apv", "css:finder"],
+        ["xpath=//input[@id=':pv']", "xpath:attributes"],
+        ["xpath=//div[@id=':pw']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5da96b86-be3c-4e32-aad6-ef65cc67c616",
+      "comment": "Ввод содержания",
+      "command": "type",
+      "target": "id=:z7",
+      "targets": [
+        ["id=:pv", "id"],
+        ["name=subjectbox", "name"],
+        ["css=#\\3Apv", "css:finder"],
+        ["xpath=//input[@id=':pv']", "xpath:attributes"],
+        ["xpath=//div[@id=':pw']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test 3"
+    }, {
+      "id": "504d349d-37a9-436c-9882-9dd74b418917",
+      "comment": "Нажатие на форму",
+      "command": "click",
+      "target": "id=:mu",
+      "targets": [
+        ["id=:mu", "id"],
+        ["css=#\\3Amu", "css:finder"],
+        ["xpath=//img[@alt='Закрыть']", "xpath:img"],
+        ["xpath=//img[@id=':mu']", "xpath:attributes"],
+        ["xpath=//tr[@id=':mr']/td[2]/img[3]", "xpath:idRelative"],
+        ["xpath=//img[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90e2b3c5-ae13-4749-9a85-aacd49181ab0",
+      "comment": "Переход во вкладку черновики",
+      "command": "click",
+      "target": "linkText=Черновики",
+      "targets": [
+        ["linkText=Черновики", "linkText"],
+        ["css=.uA", "css:finder"],
+        ["xpath=//a[contains(text(),'Черновики')]", "xpath:link"],
+        ["xpath=//div[@id=':lk']/div/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/u/0/?pli=1#drafts')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Черновики')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64d9d504-c7b3-4d4d-941b-ba03de1c9629",
+      "comment": "Открытие первого черновика",
+      "command": "click",
+      "target": "id=:14g",
+      "targets": [
+        ["id=:14g", "id"],
+        ["css=#\\3A 14g", "css:finder"],
+        ["xpath=//tr[@id=':14g']", "xpath:attributes"],
+        ["xpath=//table[@id=':13p']/tbody/tr[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/table/tbody/tr[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d18b2ae4-eba3-4894-950c-1b727e83004e",
+      "comment": "Проверка первого черновика",
+      "command": "verifyElementPresent",
+      "target": "id=:pv",
+      "targets": [],
+      "value": "test 1"
+    }, {
+      "id": "8711361c-568a-48c1-b809-0563c769f3ac",
+      "comment": "Открытие второго черновика",
+      "command": "click",
+      "target": "id=:143",
+      "targets": [
+        ["id=:143", "id"],
+        ["css=#\\3A 143", "css:finder"],
+        ["xpath=//tr[@id=':143']", "xpath:attributes"],
+        ["xpath=//table[@id=':13p']/tbody/tr[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/table/tbody/tr[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b14d7eb-99ab-4257-83d8-3fc350d1ba52",
+      "comment": "Проверка второго черновика",
+      "command": "verifyElementPresent",
+      "target": "id=:xp",
+      "targets": [],
+      "value": "test 2"
+    }, {
+      "id": "795eccfb-5097-41a0-8937-f4c701a454d1",
+      "comment": "Открытие третьего черновика",
+      "command": "click",
+      "target": "id=:13q",
+      "targets": [
+        ["id=:13q", "id"],
+        ["css=#\\3A 13q", "css:finder"],
+        ["xpath=//tr[@id=':13q']", "xpath:attributes"],
+        ["xpath=//table[@id=':13p']/tbody/tr", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/table/tbody/tr", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9ec1f31-a298-4e17-afcf-c6494084d0ee",
+      "comment": "Проверка третьего черновика",
+      "command": "verifyElementPresent",
+      "target": "id=:16v",
+      "targets": [],
+      "value": "test 3"
+    }]
+  }],
+  "suites": [{
+    "id": "44a1fc12-ae71-461c-9630-f9def5df66c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mail.ru/", "https://www.google.com/intl/ru/gmail/about/", "https://mail.yandex.ru/?uid=805581109#tabs/relevant"],
+  "plugins": []
+}
